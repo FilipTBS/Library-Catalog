@@ -22,4 +22,5 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npx playwright install
+    - run: cd ./server && node server.js
     - run: npx playwright test
